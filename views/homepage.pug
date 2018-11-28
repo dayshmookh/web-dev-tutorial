@@ -3,6 +3,33 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document
+        title Home
+
+        include styles.pug
+
     body
-        h1 Hello im a rendered content
+        include navbar.pug
+
+        
+        .container
+            .row
+                h3.col.s12.center Smart Doctor
+            
+            .row
+                .col.s4
+                    .card.small.hoverable
+                .col.s4
+                    .card.small.hoverable
+                .col.s4
+                    .card.small.hoverable
+                .col.s4
+                    .card.small.hoverable
+                .col.s4
+                    .card.small.hoverable
+                .col.s4
+                    .card.small.hoverable
+
+
+        include scripts.pug
+
+
