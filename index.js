@@ -1,13 +1,24 @@
 var express = require('express')
+var path = require('path')
 
 var app = express()
-var port = process.environment.PORT || 3000
+var port = 3000
 
 app.use(express.static(__dirname + '/public'))
 
-// app.get('/', function (req, res) {
-//     res.sendFile(__dirname + "/public/index.html")
-// })
+
+// -----
+
+app.set('view engine', 'pug')
+app.set('views', path.join(__dirname, 'views'))
+
+// -----
+
+
+
+app.get('/', function (req, res) {
+    res.render('homepage')
+})
 
 // app.get('/red', function (req, res) {
 //     res.send("Hello red!")
