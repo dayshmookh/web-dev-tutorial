@@ -20,6 +20,10 @@ app.get('/', function (req, res) {
     res.render('homepage');
 });
 
+app.get('/about', function (req, res) {
+    res.render('about');
+});
+
 // app.get('/red', function (req, res) {
 //     res.send("Hello red!")
 // })
