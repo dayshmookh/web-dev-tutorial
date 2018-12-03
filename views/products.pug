@@ -1,0 +1,21 @@
+extends layout.pug
+
+include product-mix.pug
+
+block styles
+    //- Use this spcae for page related styles
+    
+block content
+    //- Use this spcae for page content
+
+    .container
+        .row
+            +product("qwert", "Cat", "/images/background1.jpg")
+            +product("qwet", "Dog", "/images/background1x.jpg")
+            +product("qwet", "Mouse", "/images/background2x.jpg")
+            
+
+
+block scripts
+    //- Use this spcae for page related scripts
+    
