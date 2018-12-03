@@ -1,0 +1,10 @@
+mixin product(id,name,img)
+    .col.s4
+        .card
+            .card-image
+                img(src=img, alt="Product image")
+                span.card-title= name
+            //- .card-content
+                p Some description
+            .card-action
+                a.btn.btn-flat.red.white-text(href="/details?product="+id) Add
