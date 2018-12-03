@@ -1,11 +1,24 @@
-nav.blue.darken-4
-    .nav-wrapper
-        a.brand-logo(href="/") Logo
-        ul#nav-mobile.right.hide-on-med-and-down
-            li
-                a(href="/") Home
-                    i.material-icons.left filter_vintage
-            li
-                a(href="/about") About
-                    i.material-icons.left account_circle
-            
+.navbar-fixed
+    nav.blue.darken-4
+        .nav-wrapper
+        
+            //- a.brand-logo(href="#" data-target="mobilemenu").sidenav-trigger.show-on-large Logo
+            a.brand-logo(href="#") Logo
+                //- i.material-icons.left menu
+
+            //- ul#nav-mobile.right.hide-on-med-and-down
+            ul.right
+                li
+                    a(href="/")
+                        i.material-icons home
+                li
+                    a(href="/about")
+                        i.material-icons account_circle
+                li
+                    a(href="/settings")
+                        i.material-icons settings
+                //- li
+                    a(href="/info")
+                        i.material-icons info
+      
+//- include sidenav.pug

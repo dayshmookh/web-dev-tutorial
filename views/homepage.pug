@@ -1,35 +1,26 @@
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Home
+extends layout.pug
 
-        include styles.pug
+block styles
+    
 
-    body
-        include navbar.pug
-
+block content
+    .container
+        .row
+            h3.col.s12.center Smart Doctor
         
-        .container
-            .row
-                h3.col.s12.center Smart Doctor
-            
-            .row
-                .col.s4
-                    .card.small.hoverable
-                .col.s4
-                    .card.small.hoverable
-                .col.s4
-                    .card.small.hoverable
-                .col.s4
-                    .card.small.hoverable
-                .col.s4
-                    .card.small.hoverable
-                .col.s4
-                    .card.small.hoverable
+        .row
+            .col.s4
+                .card.small.hoverable
+            .col.s4
+                .card.small.hoverable
+            .col.s4
+                .card.small.hoverable
+            .col.s4
+                .card.small.hoverable
+            .col.s4
+                .card.small.hoverable
+            .col.s4
+                .card.small.hoverable
 
-
-        include scripts.pug
-
-
+block scripts
+    
