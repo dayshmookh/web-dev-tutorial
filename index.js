@@ -24,6 +24,11 @@ app.get('/about', function (req, res) {
     res.render('about');
 });
 
+app.get('/products', function(req,res){
+    // console.log(req.query);
+    res.render('products');
+});
+
 // app.get('/red', function (req, res) {
 //     res.send("Hello red!")
 // })
