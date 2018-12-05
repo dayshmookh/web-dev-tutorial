@@ -1,0 +1,45 @@
+extends layout.pug
+
+block styles
+    //- Use this spcae for page related styles
+    
+block content
+    //- Use this spcae for page content
+    .container
+        h3.light Create product
+
+        .row
+            form.col.s8(action="")
+                .row
+                    .col.s6.input-field
+                        input#name(type="text", name="name")
+                        label(for="name") Name
+
+                    .col.s6.input-field.file-field
+                        .btn
+                            span Image
+                            input(type="file", name="image")
+                        .file-path-wrapper
+                            input.file-path.validate(type="text")
+
+                .row
+                    .col.s12.input-field
+                        textarea#description.materialize-textarea(name="description")
+                        label(for="description") Description
+
+                .row
+                    .col.s12
+                        a.btn(href="#") Create product
+
+            .col.s4
+                .card
+                    .card-image
+                        img(src="/images/background3x.jpg", alt="")
+                    
+                
+                    
+            
+
+block scripts
+    //- Use this spcae for page related scripts
+    
