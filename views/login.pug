@@ -1,0 +1,46 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Login
+
+        include styles.pug
+        
+
+    body
+
+        
+        main.valign-wrapper.blue-gradient
+            .container
+
+                .row
+                    .col.s12.m6.push-m3.l4.push-l4
+                        .card-panel.z-dept
+                            
+
+                            h3.col.s12.header.center.light Login
+
+                            .row
+                                .col.s10.push-s1
+                                    .input-field
+                                        input#username(type="text", name="username")
+                                        label(for="username") Username
+                                .col.s10.push-s1
+                                    .input-field
+                                        input#password(type="password", name="password")
+                                        label(for="password") Password
+                            .row
+                                .col.s10.push-s1
+
+                                    a(href="#") Forgot password?
+
+                                    a.btn.right(href="#") Login
+            
+
+
+
+
+        include scripts.pug
+        block scripts
+
