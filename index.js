@@ -20,18 +20,21 @@ app.get('/', function (req, res) {
     res.render('homepage');
 });
 
+app.get('/login', function (req, res) {
+    res.render('login');
+});
+
 app.get('/about', function (req, res) {
     res.render('about');
 });
 
-app.get('/products', function(req,res){
-    // console.log(req.query);
+app.get('/products', function (req, res) {
     res.render('products');
 });
 
-// app.get('/red', function (req, res) {
-//     res.send("Hello red!")
-// })
+app.get('/product/create', function (req, res) {
+    res.render('createproduct');
+});
 
 app.listen(port, function () {
     console.log('App listening on port ' + port + '...');
