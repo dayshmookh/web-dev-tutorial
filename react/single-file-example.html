@@ -3,27 +3,31 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, max-width=device-width">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<title>Hello World</title>
 
-	<script src="jquery.min.js"></script>
+	<link rel="stylesheet" href="materialize.min.css">
+	<link rel="stylesheet" href="style.css">
 
-	<script src="react.development.js"></script>
-	<script src="react-dom.development.js"></script>
-
-	<!-- Don't use this in production: -->
-	<script src="babel.min.js"></script>
 </head>
 
 <body>
 
-	<!-- <div id="timer"></div> -->
 	<div id="root"></div>
 
 
-	<script type="text/babel" src="trial.js"></script>
+	<script src="jquery.min.js"></script>
+
+	<script src="materialize.min.js"></script>
+
+	<!-- Don't use this in production: -->
+	<script src="babel.min.js"></script>
+	<script src="react.development.js"></script>
+	<script src="react-dom.development.js"></script>
+
+	<script type="text/babel" src="script.js"></script>
 	<!--
       Note: this page is a great way to try React but it's not suitable for production.
       It slowly compiles JSX with Babel in the browser and uses a large development build of React.
