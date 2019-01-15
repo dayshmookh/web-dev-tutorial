@@ -215,7 +215,7 @@ $(document).ready(()=>{
             <div className="row">
                 <div className="col s12">
                     <div className="card-panel center">
-                        {true? <Clock /> : <lock></lock>}
+                        <Clock />
                     </div>
                 </div>
                 <div className="col s9">
@@ -227,5 +227,7 @@ $(document).ready(()=>{
                 </div>
             </div>
             
-        </div>, document.getElementById("root"))
+        </div>, 
+        document.getElementById("root")
+    )
 })
