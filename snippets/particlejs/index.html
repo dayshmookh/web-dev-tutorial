@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #mydiv {
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://materializecss.com/images/office.jpg');
+    }
+  </style>
+</head>
+
+<body>
+  <div id="mydiv"></div>
+
+  <script src="particles.min.js"></script>
+
+  <script>
+    
+
+    particlesJS.load('mydiv', "./particlesjs-config.json");
+
+
+    $("#element").tilt({
+      glare: true,
+    maxGlare: .5
+    });
+  </script>
+
+
+</body>
+
+</html>

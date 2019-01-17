@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition</title>
+
+    <style>
+        #mydiv {
+            height: 100px;
+            background: blueviolet;
+            width: 100px;
+            transition: height 1s ease-in, background 2s;
+        }
+
+        #mydiv:hover {
+            height: 1000px;
+            background: green;
+        }
+
+
+        #bordered {
+            width: 0;
+            height: 0;
+            
+            border-color: transparent;
+            border-style: solid;
+            border-width: 100px;
+            border-bottom-color: blue;
+            border-bottom-width: 173.2px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mydiv"></div>
+
+
+    <div id="bordered"></div>
+</body>
+
+</html>
